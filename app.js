@@ -7,10 +7,11 @@ let ler = prompt()
 
 console.clear()
 let respMenu = logMenu()
+let saldo;
 
 while (respMenu != 0) {
   if (respMenu == 1) {
-    depositar(saldoAtual())
+    saldo = depositar(saldoAtual(saldo))
     respMenu = logMenu()
   }
 }

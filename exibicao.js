@@ -8,3 +8,8 @@ export function logMenu (){
 
   return respMenu
 }
+
+export function perguntaDeposito () {
+  console.log("Quanto gostaria depoistar")
+}
+

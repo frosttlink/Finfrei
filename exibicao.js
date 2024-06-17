@@ -9,7 +9,20 @@ export function logMenu (){
   return respMenu
 }
 
-export function perguntaDeposito () {
-  console.log("Quanto gostaria depoistar")
+
+export function logSaque() {
+  console.log("Quanto gostaria de sacar")
 }
 
+export function saldoAtual() {
+  console.log("Quanto é seu saldo atual e quanto gostaria de dpositar");
+  let saldoAtual = Number(ler())
+  
+  return saldoAtual
+}
+
+
+
+// export function logDeposito () {
+//  return console.log("Quanto gostaria de depoistar")
+// }

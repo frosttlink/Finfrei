@@ -1,11 +1,14 @@
 import prompt from "prompt-sync";
 let ler = prompt()
 
-function depositar(saldoAtual) {
-  let depositado;
-  while (depositado <= 0){
-  depositado = Number(ler());
-  }
+export function depositar(saldoAtual) {
+
+
+  let  depositado;
+
+  do {depositado = Number(ler())} 
+    while (depositado <= 0)
+
   let novoValor = saldoAtual + depositado;
 
   return novoValor

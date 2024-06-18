@@ -1,4 +1,4 @@
-import { exibicao, logMenu, logSaque, saldoAtualDeposito } from "./exibicao.js"
+import { exibicao, jurosCapital, logMenu, logSaque, saldoAtualDeposito } from "./exibicao.js"
 import { depositar, exibirSaldo, sacar } from "./financeiro.js"
 import { menu } from "./menu.js"
 
@@ -20,6 +20,6 @@ while (respMenu != 0) {
     exibicao(exibirSaldo(saldo))
     respMenu = logMenu()
   } else if (respMenu == 4) {
-    
+    jurosCapital()
   }
 }

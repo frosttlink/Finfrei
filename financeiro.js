@@ -30,10 +30,10 @@ export function exibirSaldo(saldo) {
   return saldoA
 }
 
-export function jurosCompostos (juros, tempo, capital) {
+export function jurosCompostos (capital, juros, tempo) {
   let montante;
 
-  montante = capital (1 + (juros / 100))**tempo 
+  montante = capital (1 + (juros / 100)) ** tempo 
 
   return montante
 }

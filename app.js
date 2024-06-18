@@ -1,4 +1,4 @@
-import { capital as cap, capital, exibicao, juros as jur, juros, logMenu, logSaque, saldoAtualDeposito, tempo as temp, tempo } from "./exibicao.js"
+import { capital as capital, exibicao, juros as jr, juros, logMenu, logSaque, resultadoLucro, saldoAtualDeposito, tempo, tempo as tp } from "./exibicao.js"
 import { depositar, exibirSaldo, jurosCompostos, sacar } from "./financeiro.js"
 import { menu } from "./menu.js"
 
@@ -7,10 +7,12 @@ let ler = prompt()
 
 console.clear()
 let respMenu = logMenu()
-let saldo = 0
-let cap = 0
-let jur = 0
-let temp = 0
+
+let saldo = 0;
+let cpt = 0;
+let jr = 0;
+let tp = 0;
+let r = 0;
 
 while (respMenu != 0) {
   if (respMenu == 1) {
@@ -23,12 +25,14 @@ while (respMenu != 0) {
     exibicao(exibirSaldo(saldo))
     respMenu = logMenu()
   } else if (respMenu == 4) {
-    cap = capital()
-    jur = juros()
-    temp = tempo()
+    cpt = capital()
+    jr = juros()
+    tp = tempo()
 
-    jurosCompostos(cap, jur, temp)
+    r = jurosCompostos(cpt, jr, tp)
 
+    resultadoLucro(r)
+    
     respMenu = logMenu()
   }
 }

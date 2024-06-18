@@ -2,8 +2,6 @@ import prompt from "prompt-sync";
 let ler = prompt()
 
 export function depositar(saldoAtual) {
-
-
   let  depositado;
 
   do {depositado = Number(ler())} 
@@ -15,16 +13,27 @@ export function depositar(saldoAtual) {
 }
 
 
-function sacar(saldoAtual) {
+export function sacar(saldoAtual) {
   let sacado;
-  while (sacado <= 0) {
-    sacado = Number(ler());
-  }
+
+  do {sacado = Number(ler())} 
+    while (sacado <= 0)
+
   let novoValor = saldoAtual - sacado;
 
   return novoValor
 }
 
-function exibirSaldo(saldoAtual) {
-  
+export function exibirSaldo(saldo) {
+  let saldoA = saldo
+
+  return saldoA
+}
+
+export function jurosCompostos (juros, tempo, capital) {
+  let montante;
+
+  montante = capital (1 + (juros / 100))**tempo 
+
+  return montante
 }

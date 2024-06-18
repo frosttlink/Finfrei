@@ -11,18 +11,40 @@ export function logMenu (){
 
 
 export function logSaque() {
-  console.log("Quanto gostaria de sacar")
-}
-
-export function saldoAtual() {
-  console.log("Quanto é seu saldo atual e quanto gostaria de dpositar");
+  console.log("Quanto é seu saldo atual");
   let saldoAtual = Number(ler())
-  
+  console.log("Quanto deseja sacar");
   return saldoAtual
 }
 
+export function saldoAtualDeposito() {
+  console.log("Quanto é seu saldo atual");
+  let saldoAtual = Number(ler())
+  console.log("Quanto deseja depositar");
+  return saldoAtual
+}
 
+export function exibicao(saldo) {
+  console.log(`Seu Saldo Atual é ${saldo}`);
+}
 
-// export function logDeposito () {
-//  return console.log("Quanto gostaria de depoistar")
-// }
+export function jurosCapital() {
+  console.log("Qual será o capital")
+  let capital = Number(ler())
+
+  return capital
+}
+
+export function jurosJuros() {
+  console.log("Qual será o juros")
+  let juros = Number(ler())
+
+  return juros
+}
+
+export function jurosTempo() {
+  console.log("Qual será o tempo")
+  let tempo = Number(ler())
+
+  return tempo
+}

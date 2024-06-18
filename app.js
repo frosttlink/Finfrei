@@ -1,17 +1,16 @@
-import { capital as capital, exibicao, juros as jr, juros, logMenu, logSaque, resultadoLucro, saldoAtualDeposito, tempo, tempo as tp } from "./exibicao.js"
+import { capital, exibicao, juros, logMenu, logSaque, resultadoLucro, saldoAtualDeposito,tempo } from "./exibicao.js"
 import { depositar, exibirSaldo, jurosCompostos, sacar } from "./financeiro.js"
-import { menu } from "./menu.js"
 
-import prompt from "prompt-sync"
-let ler = prompt()
 
 console.clear()
 let respMenu = logMenu()
 
 let saldo = 0;
+
 let cpt = 0;
 let jr = 0;
 let tp = 0;
+
 let r = 0;
 
 while (respMenu != 0) {

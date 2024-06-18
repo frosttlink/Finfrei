@@ -28,21 +28,21 @@ export function exibicao(saldo) {
   console.log(`Seu Saldo Atual é ${saldo}`);
 }
 
-export function capital(capital) {
+export function capital() {
   console.log("Qual será o capital")
   capital = Number(ler())
 
   return capital
 }
 
-export function juros(juros) {
+export function juros() {
   console.log("Qual será o juros")
   juros = Number(ler())
 
   return juros
 }
 
-export function tempo(tempo) {
+export function tempo() {
   console.log("Qual será o tempo")
   tempo = Number(ler())
 
